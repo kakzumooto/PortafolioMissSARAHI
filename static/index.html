@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Miss Sarahi | Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#a78bfa'
+              }
+            }
+          }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+
+
+
+<body class="bg-white text-gray-800 font-[Poppins]">
+
+
+<!-- NAVBAR -->
+<header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex flex-col md:flex-row justify-center items-center gap-4 p-4 px-6 md:px-12">
+    <h1 class="text-xl font-bold text-primary">Miss Sarahi</h1>
+        <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#sobre-mi" data-section="sobre-mi" class="nav-link hover:text-primary">Sobre mí</a>
+            <a href="#experiencia" data-section="experiencia" class="nav-link hover:text-primary">Experiencia</a>
+            <a href="#galeria" data-section="galeria" class="nav-link hover:text-primary">Portafolio</a>
+            <a href="#contacto" data-section="contacto" class="nav-link hover:text-primary">Contacto</a>
+        </nav>
+
+    </div>
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+        <a href="#sobre-mi" data-section="sobre-mi" class="nav-link block py-2 hover:text-primary">Sobre mí</a>
+        <a href="#experiencia" data-section="experiencia" class="nav-link block py-2 hover:text-primary">Experiencia</a>
+        <a href="#galeria" data-section="galeria" class="nav-link block py-2 hover:text-primary">Portafolio</a>
+        <a href="#contacto" data-section="contacto" class="nav-link block py-2 hover:text-primary">Contacto</a>
+    </div>
+
+</header>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="scroll-mt-24 pt-32 text-center bg-gradient-to-b from-pink-100 via-purple-100 to-white pb-24 px-6">
+
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-primary mb-4">Hola, soy Miss Sarahi 👩‍🏫</h2>
+
+        <div class="flex justify-center mb-6">
+            <img src="/img/perfil.jpeg" alt="Miss Sarahí"
+                 class="w-48 h-48 rounded-full object-cover border-4 border-purple-300 shadow-md">
+        </div>
+
+
+
+        <p class="text-lg leading-relaxed mb-6">
+            Soy maestra de preescolar con 7 años de experiencia, apasionada por la enseñanza lúdica,
+            amorosa y centrada en el desarrollo integral de los niños. Trabajo con metodologías activas y actuales respaldadas por la SEP,
+            enfocándome en el aprendizaje significativo, la educación emocional y la creatividad a través del juego.
+            Además, apoyo el proceso de lectoescritura y el desarrollo del lenguaje,
+            adaptando mis estrategias para atender las necesidades y el ritmo de cada alumno.
+        </p>
+
+        <a href="/cv_miss_sarahi.pdf" download
+           class="bg-primary text-white py-2 px-6 rounded hover:bg-purple-700 transition">
+            📄 Descargar CV
+        </a>
+    </div>
+</section>
+
+
+<!-- EXPERIENCIA - Línea de Tiempo -->
+
+<section id="experiencia" class="scroll-mt-15 bg-gradient-to-b from-purple-100 to-pink-100 py-20 px-20">
+
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-primary text-center mb-12">Experiencia Profesional</h2>
+
+        <div class="relative border-l-4 border-primary pl-10 space-y-12">
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-semibold">Guardería Subrogada IMSS U-326 (Topiltzin) <span class="text-sm text-gray-500">(2017 - 2019)</span></h3>
+                <p class="text-gray-700">Coordinadora educativa.</p>
+            </div>
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-semibold">Jardín de Niños Antón Makarenko <span class="text-sm text-gray-500">(2019 - 2020)</span></h3>
+                <p class="text-gray-700">Interinato como profesora titulada en primer grado.</p>
+            </div>
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-semibold">Jardín de Niños María Elena Rosales Vargas <span class="text-sm text-gray-500">(2020 - 2021)</span></h3>
+                <p class="text-gray-700">Interinato como profesora titulada en segundo grado.</p>
+            </div>
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-semibold">Jardín de Niños Paulo Freire <span class="text-sm text-gray-500">(2021 - 2022)</span></h3>
+                <p class="text-gray-700">Interinato como profesora titulada en primer grado.</p>
+            </div>
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-semibold">Cargo Support <span class="text-sm text-gray-500">(2022 - 2023)</span></h3>
+                <p class="text-gray-700">Auxiliar administrativa en una empresa de transporte.</p>
+            </div>
+
+
+            <div class="relative">
+                <div class="absolute -left-5 top-1 w-4 h-4 bg-green-500 rounded-full border-4 border-white animate-pulse"></div>
+                <h3 class="text-lg font-semibold text-green-700">Centro de Desarrollo Infantil Petersen <span class="text-sm text-gray-500">(2023 - Actual)</span></h3>
+                <p class="text-gray-700">Educadora titular del grupo de 3° de preescolar. Implementación de metodologías activas.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- GALERÍA -->
+    <section id="galeria" class="scroll-mt-26 py-24 px-6 bg-gradient-to-b from-pink-100 to-white pb-40">
+
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-primary mb-10">Galería de Actividades</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <img src="/img/actividad1.jpeg" alt="Actividad 1" class="w-full h-64 object-cover rounded-lg shadow" />
+            <img src="/img/actividad2.jpeg" alt="Actividad 2" class="w-full h-64 object-cover rounded-lg shadow" />
+            <img src="/img/actividad3.jpeg" alt="Actividad 3" class="w-full h-64 object-cover rounded-lg shadow" />
+            <img src="/img/actividad4.jpeg" alt="Actividad 4" class="w-full h-64 object-cover rounded-lg shadow" />
+            <img src="/img/actividad5.jpeg" alt="Actividad 5" class="w-full h-64 object-cover rounded-lg shadow" />
+            <img src="/img/actividad6.jpeg" alt="Actividad 6" class="w-full h-64 object-cover rounded-lg shadow" />
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CONTACTO- -->
+    <section id="contacto" class="scroll-mt-32 py-28 px-10 mb-40 bg-gradient-to-b from-purple-100 to-white">
+
+    <div class="max-w-md mx-auto">
+        <h2 class="text-3xl font-semibold text-primary text-center mb-6">Contacto</h2>
+        <form action="https://formsubmit.co/saraitza24@gmail.com" method="POST" id="formContacto" class="space-y-4 bg-white p-6 rounded shadow">
+            <!-- Opciones ocultas -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de Miss Sarahi">
+            <input type="hidden" name="_autoresponse" value="¡Gracias por tu mensaje! En breve me pondré en contacto contigo.">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Campos del formulario -->
+            <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-3 border rounded" />
+            <input type="email" name="email" placeholder="Tu correo" required class="w-full p-3 border rounded" />
+            <textarea name="mensaje" placeholder="Tu mensaje" required minlength="10" class="w-full p-3 border rounded"></textarea>
+
+            <button type="submit"
+                    class="bg-primary text-white py-2 px-6 rounded hover:bg-purple-700 transition w-full">
+                Enviar mensaje
+            </button>
+
+            <p id="mensajeConfirmacion" class="hidden text-green-600 mt-2 font-semibold text-center">¡Mensaje enviado con éxito!</p>
+        </form>
+
+
+    </div>
+</section>
+
+
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/525531132462" target="_blank" class="fixed bottom-4 right-4 z-50">
+    <img src="/img/whatsapp.png" alt="WhatsApp" class="w-14 h-14 drop-shadow-lg" />
+</a>
+
+<!-- SCRIPT MENÚ RESPONSIVO -->
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Cerrar menú móvil al hacer clic en un enlace
+      mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    }
+</script>
+
+<!-- SCRIPT para marcar el menu -->
+<script src="/js/contacto.js"></script>
+<script>
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      document.querySelectorAll("section[id]").forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("text-primary", "font-semibold");
+        if (link.dataset.section === current) {
+          link.classList.add("text-primary", "font-semibold");
+        }
+      });
+    });
+</script>
+
+<!-- SCRIPT de correo -->
+<script>
+    const form = document.getElementById("formContacto");
+    const mensajeConfirmacion = document.getElementById("mensajeConfirmacion");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Validación manual extra (opcional)
+      const email = form.email.value;
+      if (!email.includes("@") || !email.includes(".")) {
+        alert("Por favor, introduce un correo válido.");
+        return;
+      }
+
+      // Enviar formulario
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          mensajeConfirmacion.classList.remove("hidden");
+          setTimeout(() => mensajeConfirmacion.classList.add("hidden"), 4000);
+        } else {
+          alert("Ocurrió un error. Intenta nuevamente.");
+        }
+      });
+    });
+</script>
+<!-- SCRIPT de secciones -->
+<script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("nav a, #mobile-menu a");
+
+    function setActiveSection() {
+      const scrollY = window.pageYOffset;
+      let currentSectionId = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120; // ajuste para navbar
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          currentSectionId = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("text-primary", "font-bold");
+        if (link.getAttribute("href") === `#${currentSectionId}`) {
+          link.classList.add("text-primary", "font-bold");
+        }
+      });
+    }
+
+    // Detectar scroll
+    window.addEventListener("scroll", setActiveSection);
+
+    // Detectar clic en los enlaces para activar manualmente
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        setTimeout(setActiveSection, 400); // pequeño delay para esperar el scroll
+      });
+    });
+</script>
+
+
+
+</body>
+</html>
